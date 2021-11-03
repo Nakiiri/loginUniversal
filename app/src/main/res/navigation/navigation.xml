@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.demo.HomeFragment"
+        android:label="@string/home_icon_title"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.demo.ShopFragment"
+        android:label="@string/shop_icon_title"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.example.demo.VerifyFragment"
+        android:label="@string/verify_icon_title"
+        tools:layout="@layout/fragment_verify" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.demo.AccountFragment"
+        android:label="@string/account_icon_title"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountAttentionFragment"
+            app:destination="@id/accountAttentionFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountCollectFragment"
+            app:destination="@id/accountCollectFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountBeAttentionFragment"
+            app:destination="@id/accountBeAttentionFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountSupportFragment"
+            app:destination="@id/accountSupportFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountFragment_to_loginMethodFragment"
+            app:destination="@id/loginMethodFragment"
+            app:enterAnim="@anim/slide_to_top"
+            app:exitAnim="@anim/slide_from_bottom" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountSurveyFragment"
+            app:destination="@id/accountSurveyFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettingFragment"
+        android:name="com.example.demo.AccountSettingFragment"
+        android:label="fragment_account_setting"
+        tools:layout="@layout/fragment_account_setting" >
+        <action
+            android:id="@+id/action_accountSettingFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_accountSettingFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountSettingFragment_to_universalSettingFragment"
+            app:destination="@id/universalSettingFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountSettingFragment_to_accountSafetyFragment"
+            app:destination="@id/accountSafetyFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_accountSettingFragment_to_feedbackSettingFragment"
+            app:destination="@id/feedbackSettingFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.demo.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUsFragment_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountSettingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/universalSettingFragment"
+        android:name="com.example.demo.UniversalSettingFragment"
+        android:label="fragment_universal_setting"
+        tools:layout="@layout/fragment_universal_setting" >
+        <action
+            android:id="@+id/action_universalSettingFragment_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountSettingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSafetyFragment"
+        android:name="com.example.demo.AccountSafetyFragment"
+        android:label="fragment_account_safety"
+        tools:layout="@layout/fragment_account_safety" >
+        <action
+            android:id="@+id/action_accountSafetyFragment_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountSettingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackSettingFragment"
+        android:name="com.example.demo.FeedbackSettingFragment"
+        android:label="fragment_feedback_setting"
+        tools:layout="@layout/fragment_feedback_setting" >
+        <action
+            android:id="@+id/action_feedbackSettingFragment_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountSettingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountAttentionFragment"
+        android:name="com.example.demo.AccountAttentionFragment"
+        android:label="fragment_account_attention"
+        tools:layout="@layout/fragment_account_attention" >
+        <action
+            android:id="@+id/action_accountAttentionFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountCollectFragment"
+        android:name="com.example.demo.AccountCollectFragment"
+        android:label="fragment_account_collect"
+        tools:layout="@layout/fragment_account_collect" >
+        <action
+            android:id="@+id/action_accountCollectFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountBeAttentionFragment"
+        android:name="com.example.demo.AccountBeAttentionFragment"
+        android:label="fragment_account_be_attention"
+        tools:layout="@layout/fragment_account_be_attention" >
+        <action
+            android:id="@+id/action_accountBeAttentionFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSupportFragment"
+        android:name="com.example.demo.AccountSupportFragment"
+        android:label="fragment_account_support"
+        tools:layout="@layout/fragment_account_support" >
+        <action
+            android:id="@+id/action_accountSupportFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginMethodFragment"
+        android:name="com.example.demo.LoginMethodFragment"
+        android:label="fragment_login_method"
+        tools:layout="@layout/fragment_login_method" >
+        <action
+            android:id="@+id/action_loginMethodFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_bottom"
+            app:exitAnim="@anim/slide_from_top" />
+        <action
+            android:id="@+id/action_loginMethodFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+        <action
+            android:id="@+id/action_loginMethodFragment_to_passwordLoginFragment"
+            app:destination="@id/passwordLoginFragment"
+            app:enterAnim="@anim/slide_to_left"
+            app:exitAnim="@anim/slide_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.demo.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginMethodFragment"
+            app:destination="@id/loginMethodFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left" />
+        <action
+            android:id="@+id/action_registerFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_bottom"
+            app:exitAnim="@anim/slide_from_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordLoginFragment"
+        android:name="com.example.demo.PasswordLoginFragment"
+        android:label="fragment_password_login"
+        tools:layout="@layout/fragment_password_login" >
+        <action
+            android:id="@+id/action_passwordLoginFragment_to_loginMethodFragment"
+            app:destination="@id/loginMethodFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left" />
+        <action
+            android:id="@+id/action_passwordLoginFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_bottom"
+            app:exitAnim="@anim/slide_from_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSurveyFragment"
+        android:name="com.example.demo.AccountSurveyFragment"
+        android:label="fragment_account_survey"
+        tools:layout="@layout/fragment_account_survey" >
+        <action
+            android:id="@+id/action_accountSurveyFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:enterAnim="@anim/slide_to_right"
+            app:exitAnim="@anim/slide_from_left" />
+    </fragment>
+</navigation>
