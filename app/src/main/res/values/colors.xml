@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chosen_pink">#E91E63</color>
+    <color name="background_color">#fff</color>
+    <color name="statusBarColor">#E1E1E1</color>
+    <color name="account_secondary_color">#000000</color>
+    <color name="account_third_color">#0E0E0E</color>
+    <color name="account_color_test1">#F44336</color>
+    <color name="account_color_test2">#FF6737</color>
+    <color name="account_color_test3">#FFEB3B</color>
+    <color name="account_color_test4">#7EFB48</color>
+    <color name="account_color_test5">#66FFDB</color>
+    <color name="account_color_test6">#1DC0FF</color>
+    <color name="account_color_test7">#BC55FF</color>
+    <color name="account_color_test8">#FF1897</color>
+    <color name="btn_color_ripple">#9A8B8B</color>
+    <color name="btn_enable_false">#6E6A6A</color>
+    <color name="login_tip">#BD2020</color>
+    <color name="btn_logout_stroke">#A59F9F</color>
+    <color name="btn_survey_option_ripple">#78AFAA</color>
+    <color name="btn_survey_option_stroke">#85B1AD</color>
+    <color name="btn_survey_option_solid">#85B1AD</color>
+    <color name="survey_complete_tip">#F3564A</color>
+
+
+
+</resources>

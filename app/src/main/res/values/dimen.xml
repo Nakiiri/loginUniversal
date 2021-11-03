@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_size">10sp</dimen>
+    <dimen name="account_secondary">10sp</dimen>
+    <dimen name="account_secondary_number">14sp</dimen>
+    <dimen name="tool_bar_height">32dp</dimen>
+    <dimen name="toolbar_title">14sp</dimen>
+    <dimen name="account_setting_secondary">13sp</dimen>
+    <dimen name="copyright_size">10sp</dimen>
+    <dimen name="login_title">18sp</dimen>
+    <dimen name="login_title_secondary">12sp</dimen>
+    <dimen name="login_number_input">18sp</dimen>
+    <dimen name="login_password_input">12sp</dimen>
+    <dimen name="login_tip">10sp</dimen>
+    <dimen name="survey_title_tip">10sp</dimen>
+    <dimen name="survey_question_title">12sp</dimen>
+
+</resources>

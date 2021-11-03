@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProgressBar_survey" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="maxHeight">50dp</item>
+        <item name="minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_survey_bg</item>
+    </style>
+</resources>
